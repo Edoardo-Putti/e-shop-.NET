@@ -21,7 +21,7 @@ namespace Catalog.API.Repositories
 
         public async Task<bool> DeleteProduct(string id)
         {
-            FilterDefinition<Product> filter = Builders<Product>.Filter.Eq(p => p.Id.ToString(), id);
+            FilterDefinition<Product> filter = Builders<Product>.Filter.Eq(p => p.Id, id);
 
             DeleteResult deleteResult = await _context.Products.DeleteOneAsync(filter);
 
@@ -48,7 +48,7 @@ namespace Catalog.API.Repositories
 
         public async Task<Product> GetProducts(string id)
         {
-            return await _context.Products.Find(p => p.Id.ToString() == id).FirstOrDefaultAsync();
+            return await _context.Products.Find(p => p.Id == id).FirstOrDefaultAsync();
         }
     
 

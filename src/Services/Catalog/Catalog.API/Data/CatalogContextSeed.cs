@@ -1,4 +1,5 @@
 ﻿using Catalog.API.Entities;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Catalog.API.Data
@@ -7,8 +8,8 @@ namespace Catalog.API.Data
     {
         public static void SeedData(IMongoCollection<Product> productCollection)
         {
-            bool existingProduct = productCollection.Find(p => true).Any();
-            if(!existingProduct)
+            bool existProduct = productCollection.Find(p => true).Any();
+            if (!existProduct)
             {
                 productCollection.InsertManyAsync(GetPreconfiguredProducts());
             }
@@ -80,6 +81,5 @@ namespace Catalog.API.Data
                 }
             };
         }
-    }
     }
 }

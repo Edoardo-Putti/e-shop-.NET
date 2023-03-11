@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Services",
+    "\\src\\Services\\Catalog",
+    "\\src\\Services\\Catalog\\Catalog.API",
+    "\\src\\Services\\Catalog\\Catalog.API\\Controllers"
   ],
-  "SelectedNode": "\\e-shop",
+  "SelectedNode": "\\src\\Services\\Catalog\\Catalog.API\\Controllers\\CatalogController.cs",
   "PreviewInSolutionExplorer": false
 }
