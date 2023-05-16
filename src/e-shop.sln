@@ -23,13 +23,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount.Grpc", "Services\D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{2E8D91C5-BDD8-4727-80B2-549180FC44E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{4CA27F2C-253A-4D31-B85A-DDEC0DCDB892}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.API", "Services\Ordering\Ordering.API\Ordering.API.csproj", "{4CA27F2C-253A-4D31-B85A-DDEC0DCDB892}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Domain", "Services\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{8ECD9562-C992-40CD-8C17-202585D2868C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Domain", "Services\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{8ECD9562-C992-40CD-8C17-202585D2868C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "Services\Ordering\Ordering.Application\Ordering.Application.csproj", "{5B7DE05F-E423-434D-9A14-9568DA7084BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Application", "Services\Ordering\Ordering.Application\Ordering.Application.csproj", "{5B7DE05F-E423-434D-9A14-9568DA7084BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infrastracture", "Services\Ordering\Ordering.Infrastracture\Ordering.Infrastracture.csproj", "{C20F0445-8F1C-4061-981B-EB1638C8F3DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infrastracture", "Services\Ordering\Ordering.Infrastracture\Ordering.Infrastracture.csproj", "{C20F0445-8F1C-4061-981B-EB1638C8F3DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{60B69439-23CF-4415-8A63-AC87AA4A7582}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{6A6D2583-1B21-4FC4-BDEB-0AA8531A0BA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{D0E56543-91D7-4554-8A4D-6EE440BCC5BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OcelotApiGw", "OcelotApiGw", "{DC376AC6-FA8C-46FB-992E-D8A3EAF318E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shopping.Aggregator", "Shopping.Aggregator", "{CC2A14FC-A1D1-4701-895F-B87DCE260669}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{BFFBF964-BDA7-49A5-BF29-3A96B2794755}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +85,10 @@ Global
 		{C20F0445-8F1C-4061-981B-EB1638C8F3DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C20F0445-8F1C-4061-981B-EB1638C8F3DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C20F0445-8F1C-4061-981B-EB1638C8F3DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6D2583-1B21-4FC4-BDEB-0AA8531A0BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6D2583-1B21-4FC4-BDEB-0AA8531A0BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6D2583-1B21-4FC4-BDEB-0AA8531A0BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6D2583-1B21-4FC4-BDEB-0AA8531A0BA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +106,10 @@ Global
 		{8ECD9562-C992-40CD-8C17-202585D2868C} = {2E8D91C5-BDD8-4727-80B2-549180FC44E5}
 		{5B7DE05F-E423-434D-9A14-9568DA7084BC} = {2E8D91C5-BDD8-4727-80B2-549180FC44E5}
 		{C20F0445-8F1C-4061-981B-EB1638C8F3DA} = {2E8D91C5-BDD8-4727-80B2-549180FC44E5}
+		{6A6D2583-1B21-4FC4-BDEB-0AA8531A0BA1} = {60B69439-23CF-4415-8A63-AC87AA4A7582}
+		{DC376AC6-FA8C-46FB-992E-D8A3EAF318E9} = {D0E56543-91D7-4554-8A4D-6EE440BCC5BB}
+		{CC2A14FC-A1D1-4701-895F-B87DCE260669} = {D0E56543-91D7-4554-8A4D-6EE440BCC5BB}
+		{BFFBF964-BDA7-49A5-BF29-3A96B2794755} = {DC376AC6-FA8C-46FB-992E-D8A3EAF318E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {967D2F79-4551-4F30-BD68-43FA0E29F1D7}
