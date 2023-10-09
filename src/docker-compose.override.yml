@@ -116,7 +116,6 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - "EmailSettings__FromAddress=putti.edoardo@gmail.com"
       - "EmailSettings__FromName=edoardo"
-      - "EmailSettings__ApiKey=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"
       - "ConnectionStrings__OrderingConnectionString=Server=orderdb;Database=OrderDb;User Id=sa;Password=SwN12345678;TrustServerCertificate=True" 
       - "EventBusSettings__HostAddress=amqp://guest:guest@rabbitmq:5672"
     depends_on:
